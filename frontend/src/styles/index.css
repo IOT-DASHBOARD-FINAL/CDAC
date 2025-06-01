@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* Old color configuration */
+        --background: 197, 56%, 86%;
+        --foreground: 227, 75%, 14%;
+        --primary: 225, 39%, 39%;
+        --secondary: 210, 100%, 90%;
+        --tertiary: 216, 76%, 57%;  /* Soft Blue (Good for hover on secondary) */
+        --quaternary: 220, 100%, 80%; /* Muted Cyan (More balanced than previous) */
+        --card: 0 0% 100%;
+        --card-foreground: 240 10% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 240 10% 3.9%;
+        --primary-foreground: 0 0% 98%;
+        --secondary-foreground: 240 5.9% 10%;
+        --tertiary-foreground: 240 5.9% 10%;
+        --quaternary-foreground: 240 5.9% 10%;
+        --muted: 240 4.8% 95.9%;
+        --muted-foreground: 240 3.8% 46.1%;
+        --accent: 240 4.8% 95.9%;
+        --accent-foreground: 240 5.9% 10%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 5.9% 90%;
+        --input: 240 5.9% 90%;
+        --ring: 240 10% 3.9%;
+        --radius: 0.5rem;
+
+        /* New color configuration */
+        --light: 223.81 0% 98%;
+        --dark: 239.95 9% 6%;
+        --bg: 0 0% 100%;
+        --fg: 239.93 9% 4%;
+        --primary-fg: 0 0% 100%;
+        --secondary-fg: 240.01 6% 10%;
+        --tertiary-fg: 240 4% 16%;
+        --overlay: 0 0% 100%;
+        --overlay-fg: 239.93 9% 4%;
+        --muted-fg: 240 4% 41%;
+        --accent-fg: 0 0% 100%;
+        --accent-subtle: 216.92 99% 97%;
+        --accent-subtle-fg: 216.74 100% 40%;
+        --success: 161.17 91% 31%;
+        --success-fg: 151.77 82% 96%;
+        --info: 205.77 100% 50%;
+        --info-fg: 0 0% 100%;
+        --danger: 0.01 72% 51%;
+        --danger-fg: 360 86% 97%;
+        --warning: 43.2 96% 56.99%;
+        --warning-fg: 20.91 91% 14.1%;
+        --toggle: 240.01 5% 84%;
+        --primary-chart: 216.74 100% 45%;
+        --secondary-chart: 219.83 100% 77%;
+        --tertiary-chart: 216.01 92% 60%;
+        --highlight-chart: 210 98% 78%;
+        --accent-chart: 210 98% 78%;
+    }
+
+    .dark {
+        /* Old dark mode configuration */
+        --background: 240 10% 3.9%;
+        --foreground: 0 0% 98%;
+        --card: 240 10% 3.9%;
+        --card-foreground: 0 0% 98%;
+        --popover: 240 10% 3.9%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 0 0% 98%;
+        --primary-foreground: 240 5.9% 10%;
+        --secondary: 240 3.7% 15.9%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 240 3.7% 15.9%;
+        --muted-foreground: 240 5% 64.9%;
+        --accent: 240 3.7% 15.9%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 3.7% 15.9%;
+        --input: 240 3.7% 15.9%;
+        --ring: 240 4.9% 83.9%;
+    }
+}
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #99bbff;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #3e81e5;
+}
+
+.will-change-transform-opacity {
+    will-change: transform, opacity;
+}
+
+html, body, #root {
+    height: 100%;
+}
