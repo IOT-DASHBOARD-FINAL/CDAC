@@ -1,0 +1,73 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             Int       @id @default(autoincrement())
+  firstName      String?
+  lastName       String?
+  registerNumber String?   @unique
+  batch          Int?
+  username       String    @unique
+  email          String    @unique
+  password       String
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+  role           Role      @default(USER)
+  projects       Project[]
+}
+
+model Project {
+  id              Int      @id @default(autoincrement())
+  name            String
+  description     String
+  microcontroller String
+  userId          Int
+  user            User     @relation(fields: [userId], references: [id])
+  sensors         Sensor[]
+
+  @@unique([userId, name])
+}
+
+model Sensor {
+  id         Int          @id @default(autoincrement())
+  name       String
+  type       SensorType
+  unit      String
+  minThreshold Float
+  maxThreshold Float
+  projectId  Int
+  project    Project      @relation(fields: [projectId], references: [id])
+  sensorData SensorData[]
+
+  @@unique([projectId, name])
+}
+
+model SensorData {
+  id        Int      @id @default(autoincrement())
+  value     Float
+  timestamp DateTime @default(now())
+  sensorId  Int
+  sensor    Sensor   @relation(fields: [sensorId], references: [id])
+}
+
+enum SensorType {
+  INPUT
+  OUTPUT
+}
+
+enum Role {
+  USER
+  ADMIN
+}
