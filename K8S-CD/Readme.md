@@ -22,7 +22,7 @@ Ensure you have the following installed:
 1. **Clone the repository:**
 
     ```
-    git clone https://github.com/KAVIRAJec/Iot-Application.git
+    git clone https://github.com/IOT-DASHBOARD-FINAL/CDAC
     ```
 2.  **Navigate to folder:**
     ```

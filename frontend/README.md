@@ -43,7 +43,7 @@ The frontend of this IoT application is built using modern web technologies to p
 1. **Clone the repository:**
 
     ```
-    git clone https://github.com/KAVIRAJec/Iot-Application.git
+    git clone https://github.com/IOT-DASHBOARD-FINAL/CDAC
     ```
 
 2. **Navigate to the frontend directory:**
