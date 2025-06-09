@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: iot-application-frontend-service
+spec:
+  type: NodePort
+  selector:
+    app: iot-application-frontend
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30080 # Replace with a port between 30000-32767

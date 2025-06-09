@@ -42,7 +42,6 @@ The backend of this IoT application is built using Node.js and Express to handle
 
     ```
     git clone https://github.com/IOT-DASHBOARD-FINAL/CDAC
-
     ```
 
 2. **Navigate to the backend directory:**
