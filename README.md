@@ -36,3 +36,11 @@ Contributions are welcome! If you have ideas for new features or improvements, p
 ## License
 
 This project is licensed under the MIT License.
+![alt text](<Screenshot 2025-06-09 190945.png>)
+
+![alt text](<Screenshot 2025-06-09 191348.png>) 
+
+![alt text](<Screenshot 2025-06-09 191258.png>)
+
+
+ ![alt text](<Screenshot 2025-06-09 191332.png>)
