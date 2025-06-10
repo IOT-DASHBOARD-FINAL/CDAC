@@ -4,6 +4,7 @@
 
 This IoT application was developed specifically for the IoT special lab at my College to manage and monitor IoT (Internet of Things) projects. It aims to bridge the gap between hardware and software integration, particularly for first-year students or those from non-computing backgrounds who are new to web dashboard development.
 
+
 ## Problem It Solves
 
 The application addresses several key challenges:
@@ -18,6 +19,8 @@ The application addresses several key challenges:
 - **Tutorial Page:** Includes a tutorial section on the website that guides users through API endpoints, coding, and attachment sending.
 - **Project Management:** Users can manage projects and sensors, with visualization capabilities.
 - **Admin Dashboard:** Faculty members can view user projects, track lab activities, and present reports to higher authorities, showcasing both hardware and software support.
+
+
 
 ## Technologies Used
 
@@ -36,11 +39,3 @@ Contributions are welcome! If you have ideas for new features or improvements, p
 ## License
 
 This project is licensed under the MIT License.
-![alt text](<Screenshot 2025-06-09 190945.png>)
-
-![alt text](<Screenshot 2025-06-09 191348.png>) 
-
-![alt text](<Screenshot 2025-06-09 191258.png>)
-
-
- ![alt text](<Screenshot 2025-06-09 191332.png>)
