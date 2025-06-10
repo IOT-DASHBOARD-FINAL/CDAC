@@ -4,7 +4,15 @@
 
 This IoT application was developed specifically for the IoT special lab at my College to manage and monitor IoT (Internet of Things) projects. It aims to bridge the gap between hardware and software integration, particularly for first-year students or those from non-computing backgrounds who are new to web dashboard development.
 
-![alt text](login.png)
+
+![alt text](Dashboard.png)
+
+![alt text](sensor.png)
+
+![alt text](<sensor chart.png>)
+
+![alt text](<manage users.png>)
+
 
 ## Problem It Solves
 
