@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend-container
-          image: tharanika/iot-frontend:latest
+          image: tharanikaramsamy/iot-frontend:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
