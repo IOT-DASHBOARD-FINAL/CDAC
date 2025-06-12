@@ -44,7 +44,7 @@ const db_test = main();
 app.use('/api', userRoutes);
 app.use('/api', projectRoutes);
 app.use('/api', sensorRoutes(io));
-app.use('/health', healthCheck);
+app.use('/api/health', healthCheck);
 
 io.on('connection', (socket) => {
     console.log('A client connected:', socket.id);
